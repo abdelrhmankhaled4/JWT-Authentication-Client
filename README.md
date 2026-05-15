@@ -1,59 +1,112 @@
-# Web
+JWT Authentication Client
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+A modern JWT Authentication Client built with Angular that provides a complete authentication flow including Login, Register, Protected Routes, JWT Token Handling, and Role-Based Authorization integration with ASP.NET Core Web API.
 
-## Development server
+🚀 Features
+User Registration & Login
+JWT Authentication
+Role-Based Authorization
+Protected Routes using Angular Guards
+Token Storage using LocalStorage
+HTTP Interceptor for JWT Token
+Responsive UI
+Authentication State Management
+Logout Functionality
+🛠️ Tech Stack
+Angular
+TypeScript
+HTML5
+CSS3
+Bootstrap
+JWT Authentication
+ASP.NET Core Web API (Backend)
+📂 Project Structure
+src/
+│
+├── app/
+│   ├── components/
+│   ├── services/
+│   ├── guards/
+│   ├── interceptors/
+│   ├── models/
+│   ├── pages/
+│   └── shared/
+│
+├── assets/
+└── environments/
+🔐 Authentication Flow
+User logs in using email and password.
+Backend validates credentials.
+JWT Token is generated from the API.
+Angular stores the token locally.
+HTTP Interceptor automatically attaches the token to requests.
+Protected routes are accessible only for authenticated users.
 
-To start a local development server, run:
+JWT authentication is widely used for secure authorization and stateless authentication systems.
 
-```bash
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/abdelrhmankhaled4/JWT-Authentication-Client.git
+
+Navigate to the project folder:
+
+cd JWT-Authentication-Client
+
+Install dependencies:
+
+npm install
+
+Run the project:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The application will run on:
 
-## Code scaffolding
+http://localhost:4200
+🔗 Backend API
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This project works with an ASP.NET Core JWT Authentication API.
 
-```bash
-ng generate component component-name
-```
+Example API features:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Login
+Register
+Role Management
+JWT Token Generation
+Authorization
+📸 Screenshots
+Login Page
+Register Page
+Dashboard
+Protected Pages
+🧩 JWT Security Notes
+Tokens are attached automatically using an HTTP Interceptor.
+Protected endpoints require valid authentication tokens.
+Role-based authorization can restrict pages and API access.
+JWT tokens should never contain sensitive data like passwords.
+📦 Future Improvements
+Refresh Tokens
+Email Verification
+Password Reset
+Dark Mode
+Google Authentication
+User Profile Page
+👨‍💻 Author
 
-```bash
-ng generate --help
-```
+Developed by <PRIVATE_PERSON>
 
-## Building
+GitHub Repository:
+JWT Authentication Client Repository
 
-To build the project run:
+⭐ Support
 
-```bash
-ng build
-```
+If you like this project:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Star the repository
+Fork the project
+Share feedback
+Contribute to improvements
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Built with ❤️ using Angular & ASP.NET Core Web API.
